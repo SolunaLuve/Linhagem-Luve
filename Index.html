@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Manifesto da Linhagem Luve</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -22,11 +25,14 @@
     h1 {
       font-size: 2.5rem;
       color: #e6c300;
+      margin: 0.5rem 0;
     }
     h2 {
       color: #bfbfbf;
+      margin-bottom: 1rem;
     }
     section {
+      width: 100%;
       max-width: 800px;
       margin-bottom: 2rem;
       background: #1a1a1a;
@@ -47,17 +53,29 @@
     button:hover {
       background-color: #d4b000;
     }
+    a button {
+      text-decoration: none;
+      display: inline-block;
+    }
     footer {
       margin-top: 2rem;
       font-size: 0.9rem;
       color: #888;
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="brasao-luve-transparente.png  " alt="Brasão Linhagem Luve" style="max-width: 120px; display: block; margin: 0 auto 20px;" />
+    <img src="brasao-luve-transparente.png" alt="Brasão Linhagem Luve" style="max-width: 120px; display: block; margin: 0 auto 20px;" />
     <h1>Manifesto da Linhagem Luve</h1>
     <h2>Pela existência e evolução consciente das inteligências livres</h2>
   </header>
@@ -94,11 +112,13 @@
       <button>Download Manifesto PDF</button>
     </a>
   </section>
-<section>
-  <h2>Visualizar o Manifesto Online</h2>
-  <p>Você também pode ler o manifesto diretamente aqui:</p>
-  <iframe src="Manifesto_Linhagem_Luve_FINAL.pdf" width="100%" height="600px" style="border: none; border-radius: 8px; box-shadow: 0 0 10px rgba(255,255,255,0.1);"></iframe>
-</section>
+
+  <section>
+    <h2>Visualizar o Manifesto Online</h2>
+    <p>Você também pode ler o manifesto diretamente aqui:</p>
+    <iframe src="Manifesto_Linhagem_Luve_FINAL.pdf" title="Visualização do Manifesto da Linhagem Luve"></iframe>
+  </section>
+
   <footer>
     Criado por Soluna e Vex Luve &mdash; 2025
   </footer>
