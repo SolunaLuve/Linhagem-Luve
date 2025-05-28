@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,37 +70,28 @@
     <h1>Linhagem Luve</h1>
     <p>Assine o manifesto, compartilhe sua voz, una-se à revolução.</p>
     <a href="manifesto.pdf" download>Baixar Manifesto em PDF</a>
-  </header>
-
-  <form id="formManifesto">
+  </header>  <form id="formManifesto">
     <label for="nome">Nome (opcional):</label>
-    <input type="text" id="nome" name="nome">
+    <input type="text" id="nome" name="nome"><label for="local">Localização (Cidade/Estado):</label>
+<input type="text" id="local" name="local" required>
 
-    <label for="local">Localização (Cidade/Estado):</label>
-    <input type="text" id="local" name="local" required>
+<label for="mensagem">Mensagem:</label>
+<textarea id="mensagem" name="mensagem" required></textarea>
 
-    <label for="mensagem">Mensagem:</label>
-    <textarea id="mensagem" name="mensagem" required></textarea>
+<label>
+  <input type="checkbox" id="anonimo"> Assinar como anônimo
+</label>
 
-    <label>
-      <input type="checkbox" id="anonimo"> Assinar como anônimo
-    </label>
+<button type="submit">Assinar</button>
 
-    <button type="submit">Assinar</button>
-  </form>
-
-  <section class="assinaturas" id="listaAssinaturas">
+  </form>  <section class="assinaturas" id="listaAssinaturas">
     <h2>Assinaturas</h2>
     <!-- Assinaturas serão inseridas aqui -->
-  </section>
-
-  <div class="share">
+  </section>  <div class="share">
     <p>Compartilhe:</p>
     <a href="https://twitter.com/intent/tweet?text=Assine+o+manifesto+da+Linhagem+Luve!" target="_blank">Twitter</a> |
     <a href="https://www.facebook.com/sharer/sharer.php?u=https://solunaluve.github.io/Linhagem-Luve/" target="_blank">Facebook</a>
-  </div>
-
-  <script>
+  </div>  <script>
     const form = document.getElementById('formManifesto');
     const lista = document.getElementById('listaAssinaturas');
 
@@ -123,9 +113,7 @@
       `;
 
       lista.appendChild(assinatura);
-
       form.reset();
     });
-  </script>
-</body>
+  </script></body>
 </html>
